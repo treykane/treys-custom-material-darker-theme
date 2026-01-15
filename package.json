@@ -1,0 +1,37 @@
+{
+  "name": "treys-material-darker-theme",
+  "displayName": "Trey's Material Darker Theme",
+  "description": "A customized Material Darker theme for VS Code and Cursor",
+  "version": "1.0.0",
+  "publisher": "treykane",
+  "author": {
+    "name": "Trey Kane",
+    "email": "trey@treykane.com"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "material",
+    "dark",
+    "darker",
+    "color-theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Trey's Material Darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/trey-material-darker-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treykane/treys-custom-material-darker-theme"
+  }
+}
