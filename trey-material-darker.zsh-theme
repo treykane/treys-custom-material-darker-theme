@@ -15,12 +15,15 @@
 # Color definitions using ANSI 256-color codes
 # These approximate the hex colors from the Material Darker theme
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-local user_host='%{$fg[cyan]%}%n@%m%{$reset_color%}'
 local current_dir='%{$fg_bold[blue]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)'
 local time_stamp='%{$fg[magenta]%}%*%{$reset_color%}'
 
+# Optional: Uncomment to show user@hostname in prompt
+# local user_host='%{$fg[cyan]%}%n@%m%{$reset_color%}'
+
 # Main prompt
+# To add user@hostname, add ${user_host} after ${ret_status}
 PROMPT="${ret_status} ${current_dir} ${git_branch}
 %{$fg_bold[white]%}$ %{$reset_color%}"
 

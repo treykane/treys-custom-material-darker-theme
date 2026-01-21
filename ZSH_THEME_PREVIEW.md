@@ -45,11 +45,19 @@ The theme uses colors that match the Material Darker editor themes:
 $ 
 ```
 
-### Failed command in a git repository with changes:
+### Failed command in a git repository with changes (red arrow):
 ```
-➜ ~/projects/website git:(develop) ✗                            12:34:56
+[RED]➜[/RED] ~/projects/website git:(develop) ✗                            12:34:56
 $ 
 ```
+Note: The arrow will be red to indicate the previous command failed.
+
+### Successful command in a git repository with changes (green arrow):
+```
+[GREEN]➜[/GREEN] ~/projects/website git:(develop) ✗                            12:34:56
+$ 
+```
+Note: The arrow is green, but the yellow ✗ indicates uncommitted changes.
 
 ### Successful command in a clean git repository:
 ```
