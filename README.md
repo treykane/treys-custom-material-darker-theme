@@ -1,6 +1,6 @@
-# Trey's Customized Code Editor Themes
+# Trey's Customized Material Darker Themes
 
-All themes are based on and inspired by Material UI and Editor themes that came before it. This repository contains theme files for Zed, VS Code, and Cursor.
+All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, and ZSH (Oh-My-Zsh).
 
 ## Installation
 
@@ -30,9 +30,57 @@ Alternatively, you can install as a development extension:
 4. Type "Developer: Install Extension from Location"
 5. Select the repository folder
 
+### ZSH / Oh-My-Zsh
+
+#### Manual Installation
+1. Copy `trey-material-darker.zsh-theme` to your Oh-My-Zsh custom themes directory:
+   ```bash
+   cp trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/
+   ```
+
+2. Edit your `~/.zshrc` file and set the theme:
+   ```bash
+   ZSH_THEME="trey-material-darker"
+   ```
+
+3. Reload your ZSH configuration:
+   ```bash
+   source ~/.zshrc
+   ```
+
+#### Alternative Installation (Symlink)
+1. Create a symlink to the theme file:
+   ```bash
+   ln -s /path/to/treys-custom-material-darker-theme/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/trey-material-darker.zsh-theme
+   ```
+
+2. Edit your `~/.zshrc` file and set the theme:
+   ```bash
+   ZSH_THEME="trey-material-darker"
+   ```
+
+3. Reload your ZSH configuration:
+   ```bash
+   source ~/.zshrc
+   ```
+
 ## Theme Files
 
 - `trey-material-darker-theme-zed.json` - Zed editor theme
+- `trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme
 - `package.json` - VS Code/Cursor extension manifest
 - `themes/trey-material-darker-theme.json` - VS Code/Cursor theme definition
+
+## Color Palette
+
+The Material Darker theme uses the following color palette across all themes:
+
+- **Background**: `#212121`, `#1a1a1a`
+- **Foreground**: `#EEFFFF`
+- **Blue**: `#82AAFF`
+- **Green**: `#C3E88D`
+- **Red**: `#f07178`
+- **Yellow**: `#FFCB6B`
+- **Cyan**: `#89DDFF`
+- **Gray**: `#848484`
 
