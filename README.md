@@ -1,6 +1,6 @@
 # Trey's Customized Material Darker Themes
 
-All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, and ZSH (Oh-My-Zsh).
+All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, and ZSH (Oh-My-Zsh).  Currently this repo is an experiment in managing a project with AI.  The original ZED theme was done by me... I've since been using AI to expand the places the theme is used. 
 
 ## Project Structure
 
