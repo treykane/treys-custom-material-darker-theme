@@ -41,7 +41,9 @@ Alternatively, you can install as a development extension:
 
 ### ZSH / Oh-My-Zsh
 
-#### Manual Installation
+#### Oh-My-Zsh Theme (Simple)
+
+**Manual Installation:**
 1. Copy `zsh/trey-material-darker.zsh-theme` to your Oh-My-Zsh custom themes directory:
    ```bash
    cp zsh/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/
@@ -57,7 +59,7 @@ Alternatively, you can install as a development extension:
    source ~/.zshrc
    ```
 
-#### Alternative Installation (Symlink)
+**Alternative Installation (Symlink):**
 1. Create a symlink to the theme file:
    ```bash
    ln -s /path/to/treys-custom-material-darker-theme/zsh/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/trey-material-darker.zsh-theme
@@ -73,12 +75,42 @@ Alternatively, you can install as a development extension:
    source ~/.zshrc
    ```
 
+#### Powerlevel10k Theme (Advanced)
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a fast and highly customizable ZSH theme. This configuration applies the Material Darker color scheme to Powerlevel10k.
+
+**Prerequisites:**
+1. Install Powerlevel10k by following the [official installation guide](https://github.com/romkatv/powerlevel10k#installation)
+2. Install a [Nerd Font](https://github.com/romkatv/powerlevel10k#fonts) (recommended: MesloLGS NF)
+
+**Installation:**
+1. Copy the Powerlevel10k configuration to your home directory:
+   ```bash
+   cp zsh/.p10k.zsh ~/.p10k.zsh
+   ```
+
+2. Edit your `~/.zshrc` file and set the theme to Powerlevel10k:
+   ```bash
+   ZSH_THEME="powerlevel10k/powerlevel10k"
+   ```
+
+3. Add this line at the end of your `~/.zshrc` to load the Material Darker configuration:
+   ```bash
+   [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+   ```
+
+4. Reload your ZSH configuration:
+   ```bash
+   source ~/.zshrc
+   ```
+
 ## Theme Files
 
 - `vscode/package.json` - VS Code/Cursor extension manifest
 - `vscode/themes/trey-material-darker-theme.json` - VS Code/Cursor theme definition
 - `zed/trey-material-darker-theme-zed.json` - Zed editor theme
-- `zsh/trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme
+- `zsh/trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme (simple)
+- `zsh/.p10k.zsh` - Powerlevel10k configuration (advanced)
 
 ## Color Palette
 
