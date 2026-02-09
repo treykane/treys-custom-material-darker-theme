@@ -1,6 +1,6 @@
 # Trey's Customized Material Darker Themes
 
-All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, Ghostty, and ZSH (Oh-My-Zsh).  
+All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, OpenCode, Ghostty, and ZSH (Oh-My-Zsh).  
 
 Currently this repo is an experiment in managing a project with AI.  The original ZED theme was done by me... I've since been using AI to expand the places the theme is used. 
 
@@ -8,6 +8,7 @@ Currently this repo is an experiment in managing a project with AI.  The origina
 
 The repository is organized by theme type:
 - `vscode/` - VS Code and Cursor theme files
+- `opencode/` - OpenCode theme files
 - `zed/` - Zed editor theme files
 - `ghostty/` - Ghostty terminal theme files
 - `zsh/` - ZSH/Oh-My-Zsh shell theme files
@@ -39,6 +40,23 @@ Alternatively, you can install as a development extension:
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
 4. Type "Developer: Install Extension from Location"
 5. Select the `vscode` folder from the repository
+
+### OpenCode
+
+1. Copy the `opencode` folder to your OpenCode extensions directory:
+   - macOS/Linux: `~/.opencode/extensions/`
+   - Windows: `%USERPROFILE%\.opencode\extensions\`
+
+2. Restart OpenCode
+3. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) to open the theme selector
+4. Select "Trey's Material Darker" from the list
+
+Alternatively, you can install as a development extension:
+1. Clone this repository
+2. Open OpenCode
+3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
+4. Type "Developer: Install Extension from Location"
+5. Select the `opencode` folder from the repository
 
 ### Ghostty
 
@@ -126,6 +144,8 @@ Alternatively, you can use the theme inline by adding the theme settings directl
 
 - `vscode/package.json` - VS Code/Cursor extension manifest
 - `vscode/themes/trey-material-darker-theme.json` - VS Code/Cursor theme definition
+- `opencode/package.json` - OpenCode extension manifest
+- `opencode/themes/trey-material-darker-theme.json` - OpenCode theme definition
 - `zed/trey-material-darker-theme-zed.json` - Zed editor theme
 - `ghostty/trey-material-darker` - Ghostty terminal theme
 - `zsh/trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme (simple)
