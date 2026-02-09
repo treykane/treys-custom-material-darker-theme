@@ -1,6 +1,6 @@
 # Trey's Customized Material Darker Themes
 
-All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, and ZSH (Oh-My-Zsh).  
+All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, Ghostty, and ZSH (Oh-My-Zsh).  
 
 Currently this repo is an experiment in managing a project with AI.  The original ZED theme was done by me... I've since been using AI to expand the places the theme is used. 
 
@@ -9,6 +9,7 @@ Currently this repo is an experiment in managing a project with AI.  The origina
 The repository is organized by theme type:
 - `vscode/` - VS Code and Cursor theme files
 - `zed/` - Zed editor theme files
+- `ghostty/` - Ghostty terminal theme files
 - `zsh/` - ZSH/Oh-My-Zsh shell theme files
 
 ## Installation
@@ -38,6 +39,23 @@ Alternatively, you can install as a development extension:
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
 4. Type "Developer: Install Extension from Location"
 5. Select the `vscode` folder from the repository
+
+### Ghostty
+
+1. Copy the theme file to your Ghostty themes directory:
+   ```bash
+   mkdir -p ~/.config/ghostty/themes
+   cp ghostty/trey-material-darker ~/.config/ghostty/themes/
+   ```
+
+2. Edit your Ghostty configuration file (`~/.config/ghostty/config`) and add:
+   ```
+   theme = trey-material-darker
+   ```
+
+3. Restart Ghostty or reload the configuration
+
+Alternatively, you can use the theme inline by adding the theme settings directly to your `~/.config/ghostty/config` file instead of using a separate theme file.
 
 ### ZSH / Oh-My-Zsh
 
@@ -109,6 +127,7 @@ Alternatively, you can install as a development extension:
 - `vscode/package.json` - VS Code/Cursor extension manifest
 - `vscode/themes/trey-material-darker-theme.json` - VS Code/Cursor theme definition
 - `zed/trey-material-darker-theme-zed.json` - Zed editor theme
+- `ghostty/trey-material-darker` - Ghostty terminal theme
 - `zsh/trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme (simple)
 - `zsh/.p10k.zsh` - Powerlevel10k configuration (advanced)
 
