@@ -8,6 +8,9 @@ came before them.
 > This repo is an experiment in managing a project with AI. The original
 > Zed theme was created by hand — AI has since been used to expand the
 > theme to additional editors and tools.
+>
+> Update 2.9.2026:
+> I'm adding new themes as it comes up for my use case, and the conversions using Co-Pilot have been surprisingly successful.  This project will continue.
 
 ---
 
