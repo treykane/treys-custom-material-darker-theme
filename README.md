@@ -22,6 +22,7 @@ came before them.
 | OpenCode | `opencode/` |
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
+| JetBrains IDEs | `jetbrains-ides/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 
@@ -151,6 +152,45 @@ came before them.
 
 ---
 
+### JetBrains IDEs
+
+> [!NOTE]
+> This theme works with all JetBrains IDEs, including IntelliJ IDEA, PyCharm,
+> WebStorm, PhpStorm, GoLand, RubyMine, and more.
+
+1. Copy the color scheme file to your JetBrains IDE config directory:
+
+   ```bash
+   # macOS
+   cp "jetbrains-ides/Trey's Material Darker.icls" \
+     ~/Library/Application\ Support/JetBrains/<IDE><VERSION>/colors/
+
+   # Linux
+   cp "jetbrains-ides/Trey's Material Darker.icls" \
+     ~/.config/JetBrains/<IDE><VERSION>/colors/
+
+   # Windows
+   copy "jetbrains-ides\Trey's Material Darker.icls" ^
+     %APPDATA%\JetBrains\<IDE><VERSION>\colors\
+   ```
+
+   Replace `<IDE><VERSION>` with your specific IDE and version, for example:
+   - `IntelliJIdea2024.1`
+   - `PyCharm2024.1`
+   - `WebStorm2024.1`
+
+2. Restart your JetBrains IDE.
+
+3. Go to **Settings/Preferences → Editor → Color Scheme**.
+
+4. Select **Trey's Material Darker** from the dropdown.
+
+> [!TIP]
+> You can find the exact config directory path in your IDE by going to
+> **Help → Edit Custom Properties** and checking the path shown in the dialog.
+
+---
+
 ### Ghostty
 
 1. Copy the theme file:
@@ -262,6 +302,7 @@ Darker palette to it.
 | `opencode/themes/trey-material-darker-theme.json` | OpenCode theme definition |
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
+| `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
