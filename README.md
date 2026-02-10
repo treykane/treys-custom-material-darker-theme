@@ -1,166 +1,252 @@
 # Trey's Customized Material Darker Themes
 
-All themes are based on and inspired by Material UI and Material Darker themes that came before it. This repository contains theme files for Zed, VS Code, Cursor, OpenCode, Ghostty, and ZSH (Oh-My-Zsh).  
+All themes are based on and inspired by the
+[Material UI](https://material-theme.com/) and Material Darker themes that
+came before them.
 
-Currently this repo is an experiment in managing a project with AI.  The original ZED theme was done by me... I've since been using AI to expand the places the theme is used. 
+> [!NOTE]
+> This repo is an experiment in managing a project with AI. The original
+> Zed theme was created by hand — AI has since been used to expand the
+> theme to additional editors and tools.
 
-## Project Structure
+---
 
-The repository is organized by theme type:
-- `vscode/` - VS Code and Cursor theme files
-- `opencode/` - OpenCode theme files
-- `zed/` - Zed editor theme files
-- `ghostty/` - Ghostty terminal theme files
-- `zsh/` - ZSH/Oh-My-Zsh shell theme files
+## Supported Platforms
+
+| Platform | Directory |
+| ----------------------- | ------------ |
+| VS Code / Cursor | `vscode/` |
+| OpenCode | `opencode/` |
+| Zed | `zed/` |
+| Ghostty | `ghostty/` |
+| ZSH / Oh-My-Zsh / P10k | `zsh/` |
+
+---
 
 ## Installation
 
 ### Zed
-1. Copy `zed/trey-material-darker-theme-zed.json` to your Zed themes directory:
-   - macOS/Linux: `~/.config/zed/themes/`
-   - Windows: `%APPDATA%\Zed\themes\`
-2. Open Zed settings and select "Material Darker Zed" theme
+
+1. Copy the theme file to your Zed themes directory:
+
+   ```bash
+   # macOS / Linux
+   cp zed/trey-material-darker-theme-zed.json ~/.config/zed/themes/
+   ```
+
+   ```bash
+   # Windows
+   copy zed\trey-material-darker-theme-zed.json %APPDATA%\Zed\themes\
+   ```
+
+2. Open Zed settings and select **Material Darker Zed** as your theme.
+
+---
 
 ### VS Code / Cursor
-1. Copy the `vscode` folder to your VS Code extensions directory:
-   - macOS/Linux: `~/.vscode/extensions/`
-   - Windows: `%USERPROFILE%\.vscode\extensions\`
-   
-   For Cursor, use:
-   - macOS/Linux: `~/.cursor/extensions/`
-   - Windows: `%USERPROFILE%\.cursor\extensions\`
 
-2. Restart VS Code/Cursor
-3. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) to open the theme selector
-4. Select "Trey's Material Darker" from the list
+<details>
+<summary><strong>Option A — Manual copy</strong></summary>
 
-Alternatively, you can install as a development extension:
-1. Clone this repository
-2. Open VS Code/Cursor
-3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
-4. Type "Developer: Install Extension from Location"
-5. Select the `vscode` folder from the repository
+1. Copy the `vscode/` folder to your extensions directory:
+
+   ```bash
+   # VS Code — macOS / Linux
+   cp -r vscode/ ~/.vscode/extensions/trey-material-darker
+
+   # VS Code — Windows
+   xcopy vscode %USERPROFILE%\.vscode\extensions\trey-material-darker /E /I
+   ```
+
+   ```bash
+   # Cursor — macOS / Linux
+   cp -r vscode/ ~/.cursor/extensions/trey-material-darker
+
+   # Cursor — Windows
+   xcopy vscode %USERPROFILE%\.cursor\extensions\trey-material-darker /E /I
+   ```
+
+2. Restart VS Code / Cursor.
+3. Open the theme picker with `Ctrl+K Ctrl+T` (`Cmd+K Cmd+T` on macOS).
+4. Select **Trey's Material Darker**.
+
+</details>
+
+<details>
+<summary><strong>Option B — Install as a development extension</strong></summary>
+
+1. Clone this repository.
+2. Open VS Code / Cursor.
+3. Press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS).
+4. Run **Developer: Install Extension from Location**.
+5. Select the `vscode/` folder from the cloned repository.
+
+</details>
+
+---
 
 ### OpenCode
 
-1. Copy the `opencode` folder to your OpenCode extensions directory:
-   - macOS/Linux: `~/.opencode/extensions/`
-   - Windows: `%USERPROFILE%\.opencode\extensions\`
+<details>
+<summary><strong>Option A — Manual copy</strong></summary>
 
-2. Restart OpenCode
-3. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) to open the theme selector
-4. Select "Trey's Material Darker" from the list
+1. Copy the `opencode/` folder to your extensions directory:
 
-Alternatively, you can install as a development extension:
-1. Clone this repository
-2. Open OpenCode
-3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
-4. Type "Developer: Install Extension from Location"
-5. Select the `opencode` folder from the repository
+   ```bash
+   # macOS / Linux
+   cp -r opencode/ ~/.opencode/extensions/trey-material-darker
+
+   # Windows
+   xcopy opencode %USERPROFILE%\.opencode\extensions\trey-material-darker /E /I
+   ```
+
+2. Restart OpenCode.
+3. Open the theme picker with `Ctrl+K Ctrl+T` (`Cmd+K Cmd+T` on macOS).
+4. Select **Trey's Material Darker**.
+
+</details>
+
+<details>
+<summary><strong>Option B — Install as a development extension</strong></summary>
+
+1. Clone this repository.
+2. Open OpenCode.
+3. Press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS).
+4. Run **Developer: Install Extension from Location**.
+5. Select the `opencode/` folder from the cloned repository.
+
+</details>
+
+---
 
 ### Ghostty
 
-1. Copy the theme file to your Ghostty themes directory:
+1. Copy the theme file:
+
    ```bash
    mkdir -p ~/.config/ghostty/themes
    cp ghostty/trey-material-darker ~/.config/ghostty/themes/
    ```
 
-2. Edit your Ghostty configuration file (`~/.config/ghostty/config`) and add:
-   ```
+2. Add the following to `~/.config/ghostty/config`:
+
+   ```text
    theme = trey-material-darker
    ```
 
-3. Restart Ghostty or reload the configuration
+3. Restart Ghostty or reload the configuration.
 
-Alternatively, you can use the theme inline by adding the theme settings directly to your `~/.config/ghostty/config` file instead of using a separate theme file.
+> [!TIP]
+> You can also paste the theme values directly into your
+> `~/.config/ghostty/config` instead of using a separate theme file.
+
+---
 
 ### ZSH / Oh-My-Zsh
 
-#### Oh-My-Zsh Theme (Simple)
+#### Simple Theme (Oh-My-Zsh)
 
-**Manual Installation:**
-1. Copy `zsh/trey-material-darker.zsh-theme` to your Oh-My-Zsh custom themes directory:
-   ```bash
-   cp zsh/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/
-   ```
+<details>
+<summary><strong>Option A — Direct copy</strong></summary>
 
-2. Edit your `~/.zshrc` file and set the theme:
-   ```bash
-   ZSH_THEME="trey-material-darker"
-   ```
+```bash
+cp zsh/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/
+```
 
-3. Reload your ZSH configuration:
-   ```bash
-   source ~/.zshrc
-   ```
+</details>
 
-**Alternative Installation (Symlink):**
-1. Create a symlink to the theme file:
-   ```bash
-   ln -s /path/to/treys-custom-material-darker-theme/zsh/trey-material-darker.zsh-theme ~/.oh-my-zsh/custom/themes/trey-material-darker.zsh-theme
-   ```
+<details>
+<summary><strong>Option B — Symlink (stays in sync with the repo)</strong></summary>
 
-2. Edit your `~/.zshrc` file and set the theme:
-   ```bash
-   ZSH_THEME="trey-material-darker"
-   ```
+```bash
+ln -s /path/to/treys-custom-material-darker-theme/zsh/trey-material-darker.zsh-theme \
+  ~/.oh-my-zsh/custom/themes/trey-material-darker.zsh-theme
+```
 
-3. Reload your ZSH configuration:
-   ```bash
-   source ~/.zshrc
-   ```
+</details>
 
-#### Powerlevel10k Theme (Advanced)
+Then set the theme in `~/.zshrc`:
 
-[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a fast and highly customizable ZSH theme. This configuration applies the Material Darker color scheme to Powerlevel10k.
+```bash
+ZSH_THEME="trey-material-darker"
+```
+
+Reload your shell:
+
+```bash
+source ~/.zshrc
+```
+
+---
+
+#### Advanced Theme (Powerlevel10k)
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a fast,
+highly customizable ZSH prompt. This configuration applies the Material
+Darker palette to it.
 
 **Prerequisites:**
-1. Install Powerlevel10k by following the [official installation guide](https://github.com/romkatv/powerlevel10k#installation)
-2. Install a [Nerd Font](https://github.com/romkatv/powerlevel10k#fonts) (recommended: MesloLGS NF)
 
-**Installation:**
-1. Copy the Powerlevel10k configuration to your home directory:
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k#installation)
+  installed
+- A [Nerd Font](https://www.nerdfonts.com/) installed (recommended:
+  **MesloLGS NF**)
+
+**Steps:**
+
+1. Copy the configuration file:
+
    ```bash
    cp zsh/.p10k.zsh ~/.p10k.zsh
    ```
 
-2. Edit your `~/.zshrc` file and set the theme to Powerlevel10k:
+2. Set the theme in `~/.zshrc`:
+
    ```bash
    ZSH_THEME="powerlevel10k/powerlevel10k"
    ```
 
-3. Add this line at the end of your `~/.zshrc` to load the Material Darker configuration:
+3. Add the following to the **end** of `~/.zshrc`:
+
    ```bash
    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
    ```
 
-4. Reload your ZSH configuration:
+4. Reload your shell:
+
    ```bash
    source ~/.zshrc
    ```
 
+---
+
 ## Theme Files
 
-- `vscode/package.json` - VS Code/Cursor extension manifest
-- `vscode/themes/trey-material-darker-theme.json` - VS Code/Cursor theme definition
-- `opencode/package.json` - OpenCode extension manifest
-- `opencode/themes/trey-material-darker-theme.json` - OpenCode theme definition
-- `zed/trey-material-darker-theme-zed.json` - Zed editor theme
-- `ghostty/trey-material-darker` - Ghostty terminal theme
-- `zsh/trey-material-darker.zsh-theme` - ZSH/Oh-My-Zsh shell theme (simple)
-- `zsh/.p10k.zsh` - Powerlevel10k configuration (advanced)
+| File | Description |
+| ---------------------------------------------------- | ---------------------------------------- |
+| `vscode/package.json` | VS Code / Cursor extension manifest |
+| `vscode/themes/trey-material-darker-theme.json` | VS Code / Cursor theme definition |
+| `opencode/package.json` | OpenCode extension manifest |
+| `opencode/themes/trey-material-darker-theme.json` | OpenCode theme definition |
+| `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
+| `ghostty/trey-material-darker` | Ghostty terminal theme |
+| `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
+| `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
+
+---
 
 ## Color Palette
 
-The Material Darker theme uses the following color palette across all themes:
+The following colors are shared across every theme variant:
 
-- **Background**: `#212121`, `#1a1a1a`
-- **Foreground**: `#EEFFFF`
-- **Blue**: `#82AAFF`
-- **Green**: `#C3E88D`
-- **Red**: `#f07178`
-- **Yellow**: `#FFCB6B`
-- **Cyan**: `#89DDFF`
-- **Gray**: `#848484`
-
+| Role       | Hex       |
+| ---------- | --------- |
+| Background | `#212121` |
+| Surface    | `#1a1a1a` |
+| Foreground | `#EEFFFF` |
+| Blue       | `#82AAFF` |
+| Green      | `#C3E88D` |
+| Red        | `#f07178` |
+| Yellow     | `#FFCB6B` |
+| Cyan       | `#89DDFF` |
+| Gray       | `#848484` |
