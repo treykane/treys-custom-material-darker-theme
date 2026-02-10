@@ -1,0 +1,307 @@
+{
+  "name": "Trey's Material Darker",
+  "author": "Trey Kane",
+  "variables": {
+    "background": "#212121",
+    "surface": "#1a1a1a",
+    "foreground": "#EEFFFF",
+    "comment": "#4A4A4A",
+    "blue": "#82AAFF",
+    "blue_light": "#799ff2",
+    "blue_lighter": "#99D7F6",
+    "cyan": "#89DDFF",
+    "cyan_light": "#83D3F3",
+    "green": "#C3E88D",
+    "yellow": "#FFCB6B",
+    "yellow_light": "#FDC96A",
+    "orange": "#F78C6C",
+    "orange_light": "#EAC476",
+    "red": "#f07178",
+    "purple": "#C792EA",
+    "purple_dark": "#8A69A0",
+    "red_dark": "#924D51",
+    "gray": "#848484",
+    "gray_light": "#B6C9D3",
+    "selection": "#61616150",
+    "line_highlight": "#00000050",
+    "border": "#44444460"
+  },
+  "globals": {
+    "background": "var(background)",
+    "foreground": "var(foreground)",
+    "caret": "var(foreground)",
+    "invisibles": "#424242",
+    "line_highlight": "var(line_highlight)",
+    "selection": "var(selection)",
+    "selection_border": "var(selection)",
+    "inactive_selection": "#61616130",
+    "inactive_selection_border": "#61616130",
+    "find_highlight": "var(yellow)",
+    "find_highlight_foreground": "#000000",
+    "guide": "#26323890",
+    "active_guide": "#EEFFFF60",
+    "stack_guide": "#26323890",
+    "bracket_contents_foreground": "var(cyan)",
+    "bracket_contents_options": "underline",
+    "brackets_foreground": "var(cyan)",
+    "brackets_options": "underline",
+    "tags_foreground": "var(cyan)",
+    "tags_options": "underline",
+    "highlight": "var(blue)",
+    "gutter": "var(background)",
+    "gutter_foreground": "#424242",
+    "gutter_foreground_highlight": "var(foreground)",
+    "line_diff_added": "var(green)",
+    "line_diff_modified": "var(blue)",
+    "line_diff_deleted": "var(red)",
+    "shadow": "#00000030"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment, punctuation.definition.comment",
+      "foreground": "var(comment)",
+      "font_style": "italic"
+    },
+    {
+      "name": "String",
+      "scope": "string, string.quoted, string.template",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "String Escape",
+      "scope": "constant.character.escape, string.regexp",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "var(orange)"
+    },
+    {
+      "name": "Boolean",
+      "scope": "constant.language.boolean",
+      "foreground": "var(cyan_light)"
+    },
+    {
+      "name": "Constant",
+      "scope": "constant, constant.language, constant.character, constant.other",
+      "foreground": "var(gray_light)"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword, keyword.control, keyword.operator.new, keyword.other",
+      "foreground": "var(cyan)",
+      "font_style": "italic"
+    },
+    {
+      "name": "Operator",
+      "scope": "keyword.operator, keyword.operator.logical, keyword.operator.arithmetic, keyword.operator.assignment",
+      "foreground": "var(blue_lighter)"
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation, punctuation.separator, punctuation.terminator, punctuation.section",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Function",
+      "scope": "entity.name.function, meta.function-call, support.function",
+      "foreground": "var(blue_light)"
+    },
+    {
+      "name": "Type",
+      "scope": "entity.name.type, entity.name.class, support.type, support.class",
+      "foreground": "var(yellow_light)"
+    },
+    {
+      "name": "Constructor",
+      "scope": "entity.name.tag, support.class.component",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Tag",
+      "scope": "entity.name.tag, meta.tag",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Attribute",
+      "scope": "entity.other.attribute-name, meta.attribute",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "Property",
+      "scope": "variable.other.property, support.variable.property, variable.object.property",
+      "foreground": "var(orange_light)"
+    },
+    {
+      "name": "Variable",
+      "scope": "variable, variable.other",
+      "foreground": "var(foreground)"
+    },
+    {
+      "name": "Variable Special",
+      "scope": "variable.language, variable.parameter.function.language.special",
+      "foreground": "var(red_dark)"
+    },
+    {
+      "name": "Label",
+      "scope": "entity.name.label",
+      "foreground": "var(purple_dark)"
+    },
+    {
+      "name": "Link",
+      "scope": "markup.underline.link, string.other.link",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Markup Bold",
+      "scope": "markup.bold, punctuation.definition.bold",
+      "foreground": "var(red)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Markup Italic",
+      "scope": "markup.italic, punctuation.definition.italic",
+      "foreground": "var(red)",
+      "font_style": "italic"
+    },
+    {
+      "name": "Markup Code",
+      "scope": "markup.inline.raw, markup.fenced_code.block",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Symbol",
+      "scope": "constant.other.symbol",
+      "foreground": "var(gray_light)"
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid, invalid.illegal",
+      "foreground": "#FFFFFF",
+      "background": "var(red)"
+    },
+    {
+      "name": "Deprecated",
+      "scope": "invalid.deprecated",
+      "foreground": "#FFFFFF",
+      "background": "var(purple)"
+    },
+    {
+      "name": "Diff Header",
+      "scope": "meta.diff, meta.diff.header",
+      "foreground": "var(comment)"
+    },
+    {
+      "name": "Diff Deleted",
+      "scope": "markup.deleted",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Diff Inserted",
+      "scope": "markup.inserted",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Diff Changed",
+      "scope": "markup.changed",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "CSS Class",
+      "scope": "entity.other.attribute-name.class.css",
+      "foreground": "var(yellow_light)"
+    },
+    {
+      "name": "CSS ID",
+      "scope": "entity.other.attribute-name.id.css",
+      "foreground": "var(orange_light)"
+    },
+    {
+      "name": "CSS Property",
+      "scope": "support.type.property-name.css",
+      "foreground": "var(foreground)"
+    },
+    {
+      "name": "CSS Pseudo",
+      "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "JSON Key",
+      "scope": "meta.structure.dictionary.key.json string.quoted.double.json",
+      "foreground": "var(blue_light)"
+    },
+    {
+      "name": "JSON String",
+      "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Markdown Heading",
+      "scope": "markup.heading, punctuation.definition.heading",
+      "foreground": "var(red)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Markdown Quote",
+      "scope": "markup.quote",
+      "foreground": "var(gray)",
+      "font_style": "italic"
+    },
+    {
+      "name": "Markdown List",
+      "scope": "markup.list.numbered.bullet, markup.list.unnumbered.bullet",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Python Decorator",
+      "scope": "entity.name.function.decorator.python",
+      "foreground": "var(yellow_light)"
+    },
+    {
+      "name": "Python Self",
+      "scope": "variable.language.special.self.python",
+      "foreground": "var(red_dark)",
+      "font_style": "italic"
+    },
+    {
+      "name": "JavaScript/TypeScript Import",
+      "scope": "keyword.control.import.js, keyword.control.import.ts, keyword.control.export.js, keyword.control.export.ts",
+      "foreground": "var(cyan)",
+      "font_style": "italic"
+    },
+    {
+      "name": "JavaScript/TypeScript This",
+      "scope": "variable.language.this.js, variable.language.this.ts",
+      "foreground": "var(red_dark)",
+      "font_style": "italic"
+    },
+    {
+      "name": "HTML/XML Tag Bracket",
+      "scope": "punctuation.definition.tag.html, punctuation.definition.tag.xml, punctuation.definition.tag.begin, punctuation.definition.tag.end",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Shell Variable",
+      "scope": "variable.other.readwrite.shell, variable.other.normal.shell",
+      "foreground": "var(foreground)"
+    },
+    {
+      "name": "Shell Function",
+      "scope": "entity.name.function.shell",
+      "foreground": "var(blue_light)"
+    },
+    {
+      "name": "YAML Key",
+      "scope": "entity.name.tag.yaml",
+      "foreground": "var(blue_light)"
+    },
+    {
+      "name": "YAML String",
+      "scope": "string.unquoted.yaml",
+      "foreground": "var(green)"
+    }
+  ]
+}

@@ -17,10 +17,11 @@ came before them.
 ## Supported Platforms
 
 | Platform | Directory |
-| ----------------------- | ------------ |
+| ----------------------- | --------------- |
 | VS Code / Cursor | `vscode/` |
 | OpenCode | `opencode/` |
 | Zed | `zed/` |
+| Sublime Text | `sublime-text/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 
@@ -43,6 +44,34 @@ came before them.
    ```
 
 2. Open Zed settings and select **Material Darker Zed** as your theme.
+
+---
+
+### Sublime Text
+
+1. Copy the color scheme file to your Sublime Text packages directory:
+
+   ```bash
+   # macOS / Linux
+   cp sublime-text/trey-material-darker.sublime-color-scheme \
+     ~/.config/sublime-text/Packages/User/
+
+   # Alternative path for macOS
+   cp sublime-text/trey-material-darker.sublime-color-scheme \
+     ~/Library/Application\ Support/Sublime\ Text/Packages/User/
+
+   # Windows
+   copy sublime-text\trey-material-darker.sublime-color-scheme ^
+     %AppData%\Sublime Text\Packages\User\
+   ```
+
+2. Open Sublime Text and go to **Preferences → Select Color Scheme...**
+
+3. Select **Trey's Material Darker** from the list.
+
+> [!TIP]
+> You can also use **Preferences → Customize Color Scheme** to preview
+> the theme before applying it.
 
 ---
 
@@ -226,12 +255,13 @@ Darker palette to it.
 ## Theme Files
 
 | File | Description |
-| ---------------------------------------------------- | ---------------------------------------- |
+| -------------------------------------------------------- | ---------------------------------------- |
 | `vscode/package.json` | VS Code / Cursor extension manifest |
 | `vscode/themes/trey-material-darker-theme.json` | VS Code / Cursor theme definition |
 | `opencode/package.json` | OpenCode extension manifest |
 | `opencode/themes/trey-material-darker-theme.json` | OpenCode theme definition |
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
+| `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
