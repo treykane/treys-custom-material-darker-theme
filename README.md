@@ -23,6 +23,7 @@ came before them.
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
 | JetBrains IDEs | `jetbrains-ides/` |
+| Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 
@@ -191,6 +192,29 @@ came before them.
 
 ---
 
+### Alacritty
+
+1. Copy the theme file:
+
+   ```bash
+   mkdir -p ~/.config/alacritty
+   cp alacritty/trey-material-darker.toml ~/.config/alacritty/
+   ```
+
+2. Import the theme in your `~/.config/alacritty/alacritty.toml`:
+
+   ```toml
+   import = ["~/.config/alacritty/trey-material-darker.toml"]
+   ```
+
+3. Restart Alacritty or reload the configuration with `Ctrl+Shift+R` (Linux/Windows) or `Cmd+Shift+R` (macOS).
+
+> [!TIP]
+> You can also paste the theme values directly into your
+> `~/.config/alacritty/alacritty.toml` instead of using a separate theme file.
+
+---
+
 ### Ghostty
 
 1. Copy the theme file:
@@ -303,6 +327,7 @@ Darker palette to it.
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
+| `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
