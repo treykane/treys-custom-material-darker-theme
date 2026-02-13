@@ -1,0 +1,34 @@
+# Trey's Material Darker Theme for Alacritty
+# Based on Material Darker color palette
+
+[colors.primary]
+background = "#212121"
+foreground = "#eeffff"
+
+[colors.cursor]
+text = "#212121"
+cursor = "#eeffff"
+
+[colors.selection]
+text = "#eeffff"
+background = "#616161"
+
+[colors.normal]
+black = "#212121"
+red = "#f07178"
+green = "#c3e88d"
+yellow = "#ffcb6b"
+blue = "#82aaff"
+magenta = "#c792ea"
+cyan = "#89ddff"
+white = "#eeffff"
+
+[colors.bright]
+black = "#848484"
+red = "#f07178"
+green = "#c3e88d"
+yellow = "#ffcb6b"
+blue = "#82aaff"
+magenta = "#c792ea"
+cyan = "#89ddff"
+white = "#ffffff"
