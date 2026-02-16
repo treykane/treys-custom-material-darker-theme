@@ -14,13 +14,13 @@
 	<string>0.807843 0.87451 1 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
 	<string>SFMono-Bold - 11.0</string>
-	<key>DVTConsoleExectuableInputTextColor</key>
+	<key>DVTConsoleExecutableInputTextColor</key>
 	<string>0.933333 1 1 1</string>
-	<key>DVTConsoleExectuableInputTextFont</key>
+	<key>DVTConsoleExecutableInputTextFont</key>
 	<string>SFMono-Regular - 11.0</string>
-	<key>DVTConsoleExectuableOutputTextColor</key>
+	<key>DVTConsoleExecutableOutputTextColor</key>
 	<string>0.933333 1 1 1</string>
-	<key>DVTConsoleExectuableOutputTextFont</key>
+	<key>DVTConsoleExecutableOutputTextFont</key>
 	<string>SFMono-Bold - 11.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.129412 0.129412 0.129412 1</string>
