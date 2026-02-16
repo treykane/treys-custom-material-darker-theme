@@ -23,6 +23,7 @@ came before them.
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
 | JetBrains IDEs | `jetbrains-ides/` |
+| Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
@@ -192,6 +193,29 @@ came before them.
 
 ---
 
+### Xcode
+
+1. Copy the color theme file to your Xcode FontAndColorThemes directory:
+
+   ```bash
+   # macOS
+   mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
+   cp "xcode/Trey's Material Darker.xccolortheme" \
+     ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+   ```
+
+2. Restart Xcode or reopen any open files.
+
+3. Go to **Xcode → Settings → Themes** (or **Preferences → Fonts & Colors** in older versions).
+
+4. Select **Trey's Material Darker** from the theme list.
+
+> [!TIP]
+> You can preview the theme by selecting it in the Themes preference pane
+> and looking at the preview in the bottom panel.
+
+---
+
 ### Alacritty
 
 1. Copy the theme file:
@@ -327,6 +351,7 @@ Darker palette to it.
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
+| `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
