@@ -348,31 +348,52 @@ Darker palette to it.
 > This is the simplest way to apply the syntax highlighting to Godot's built-in
 > script editor — no plugin or project changes required.
 
-1. Copy the theme file to your Godot text editor themes directory:
+1. Find your Godot editor data folder.
+
+   > [!TIP]
+   > The easiest way is to open Godot and choose **Editor → Open Editor Data/Settings Folder**
+   > (the exact label varies by platform). That opens the folder in your file manager — the
+   > `text_editor_themes` directory lives inside it.
+
+   Common default locations:
+
+   ```bash
+   # macOS (Godot downloaded from godotengine.org)
+   ~/Library/Application Support/Godot/
+
+   # Linux
+   ~/.config/godot/
+
+   # Windows
+   %APPDATA%\Godot\
+   ```
+
+2. Copy the theme file into the `text_editor_themes` sub-folder (create it if it does not exist):
 
    ```bash
    # macOS
+   mkdir -p ~/Library/Application\ Support/Godot/text_editor_themes
    cp godot/trey-material-darker.tet \
      ~/Library/Application\ Support/Godot/text_editor_themes/
+   ```
 
+   ```bash
    # Linux
+   mkdir -p ~/.config/godot/text_editor_themes
    cp godot/trey-material-darker.tet \
      ~/.config/godot/text_editor_themes/
    ```
 
    ```powershell
    # Windows
-   copy godot\trey-material-darker.tet ^
-     %APPDATA%\Godot\text_editor_themes\
+   mkdir -Force "$env:APPDATA\Godot\text_editor_themes"
+   copy godot\trey-material-darker.tet "$env:APPDATA\Godot\text_editor_themes\"
    ```
 
-   Create the `text_editor_themes` folder if it does not yet exist.
+3. Restart Godot (or reopen the Editor Settings window if Godot is already running).
 
-2. Open Godot and go to **Editor → Editor Settings → Text Editor → Theme**.
-
-3. Set **Color Theme** to **Trey-Material-Darker** from the dropdown.
-
-The theme is applied immediately; no restart is required.
+4. Open **Editor → Editor Settings**, navigate to **Text Editor → Theme**, and set
+   **Color Theme** to **trey-material-darker** from the dropdown.
 
 ---
 

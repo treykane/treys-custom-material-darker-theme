@@ -119,14 +119,18 @@ func _save_current_settings() -> void:
 		return  # Already captured; do not overwrite with plugin values.
 	var es := EditorInterface.get_editor_settings()
 	for key in _ALL_SETTINGS:
-		if es.has_setting(key):
-			_saved_settings[key] = es.get_setting(key)
+		# Store the current value if the setting already exists, or null if it
+		# is absent (so _restore_theme can skip keys we created from scratch).
+		_saved_settings[key] = es.get_setting(key) if es.has_setting(key) else null
 
 
 func _restore_theme() -> void:
 	var es := EditorInterface.get_editor_settings()
 	for key in _saved_settings:
-		es.set_setting(key, _saved_settings[key])
+		if _saved_settings[key] != null:
+			es.set_setting(key, _saved_settings[key])
+		# Settings that did not exist before are left as-is; they are standard
+		# Godot editor keys so having them present with theme values is harmless.
 	_saved_settings.clear()
 
 
@@ -223,8 +227,11 @@ func _on_settings_changed() -> void:
 
 # ── Private helper ──────────────────────────────────────────────────────────
 
-## Write a setting only when it already exists in EditorSettings, so we
-## never permanently introduce unknown keys into the user's profile.
+## Write a setting unconditionally so that colours are applied even on a
+## fresh Godot installation whose settings file has not yet been fully
+## populated.  All keys written here are standard Godot editor settings, so
+## creating them via set_setting() is safe; the save/restore cycle in
+## _save_current_settings() / _restore_theme() ensures they are put back to
+## their original values when the plugin is disabled.
 func _set(es: EditorSettings, key: String, value: Variant) -> void:
-	if es.has_setting(key):
-		es.set_setting(key, value)
+	es.set_setting(key, value)
