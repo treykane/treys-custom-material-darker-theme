@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=1 format=3]
+
+[resource]
+CodeEdit/colors/background_color = Color(0.12941176, 0.12941176, 0.12941176, 1)
+CodeEdit/colors/completion_background_color = Color(0.10196078, 0.10196078, 0.10196078, 1)
+CodeEdit/colors/completion_selected_color = Color(0.38039216, 0.38039216, 0.38039216, 0.78823529)
+CodeEdit/colors/completion_existing_color = Color(0.87058824, 0.87058824, 0.87058824, 0.12941176)
+CodeEdit/colors/completion_scroll_color = Color(1, 1, 1, 0.29019608)
+CodeEdit/colors/completion_font_color = Color(0.93333333, 1, 1, 1)
+CodeEdit/colors/font_color = Color(0.93333333, 1, 1, 1)
+CodeEdit/colors/selection_color = Color(0.38039216, 0.38039216, 0.38039216, 0.50196078)
+CodeEdit/colors/current_line_color = Color(0, 0, 0, 0.30980392)
+CodeEdit/colors/line_number_color = Color(0.25882353, 0.25882353, 0.25882353, 1)
+CodeEdit/colors/safe_line_number_color = Color(0.28974, 0.38039, 0.28974, 1)
+CodeEdit/colors/caret_color = Color(0.93333333, 1, 1, 1)
+CodeEdit/colors/caret_background_color = Color(0.12941176, 0.12941176, 0.12941176, 1)
+CodeEdit/colors/word_highlighted_color = Color(0.8, 0.9, 1, 0.14901961)
+CodeEdit/colors/bookmark_color = Color(0.50980392, 0.66666667, 1, 1)
+CodeEdit/colors/breakpoint_color = Color(0.94117647, 0.44313725, 0.47058824, 1)
+CodeEdit/colors/executing_line_color = Color(1, 0.79607843, 0.41960784, 1)
+CodeEdit/colors/mark_color = Color(0.94117647, 0.44313725, 0.47058824, 0.4)
