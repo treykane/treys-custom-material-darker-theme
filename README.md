@@ -27,6 +27,7 @@ came before them.
 | Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
+| Godot Editor | `addons/trey_material_darker_editor_theme/` |
 
 ---
 
@@ -340,6 +341,37 @@ Darker palette to it.
 
 ---
 
+### Godot Editor
+
+1. Copy the addon folder into the `addons/` directory of your Godot project:
+
+   ```bash
+   cp -r addons/trey_material_darker_editor_theme \
+     /path/to/your/godot_project/addons/
+   ```
+
+2. Open your project in Godot **4.6 or later**.
+
+3. Go to **Project → Project Settings → Plugins**.
+
+4. Find **Trey's Material Darker Editor Theme** and set its status to
+   **Enabled**.
+
+The theme is applied immediately. To disable and restore your previous
+theme, set the plugin status back to **Disabled** in the same Plugins panel.
+
+> [!TIP]
+> After enabling the plugin, open **Editor → Editor Settings** and search
+> for `trey_material_darker` to find the **high_contrast_text** toggle,
+> which uses pure white (`#FFFFFF`) for foreground text if you prefer
+> sharper contrast.
+
+> [!NOTE]
+> See [`addons/trey_material_darker_editor_theme/README.md`](addons/trey_material_darker_editor_theme/README.md)
+> for the full list of changed settings and uninstall instructions.
+
+---
+
 ## Theme Files
 
 | File | Description |
@@ -356,6 +388,8 @@ Darker palette to it.
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
+| `addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
+| `addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
 
 ---
 
