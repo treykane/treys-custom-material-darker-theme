@@ -27,7 +27,8 @@ came before them.
 | Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
-| Godot Editor | `addons/trey_material_darker_editor_theme/` |
+| Godot Script Editor | `godot/` |
+| Godot Editor (full UI) | `addons/trey_material_darker_editor_theme/` |
 
 ---
 
@@ -341,7 +342,46 @@ Darker palette to it.
 
 ---
 
-### Godot Editor
+### Godot Script Editor (Theme File)
+
+> [!TIP]
+> This is the simplest way to apply the syntax highlighting to Godot's built-in
+> script editor — no plugin or project changes required.
+
+1. Copy the theme file to your Godot text editor themes directory:
+
+   ```bash
+   # macOS
+   cp godot/trey-material-darker.tet \
+     ~/Library/Application\ Support/Godot/text_editor_themes/
+
+   # Linux
+   cp godot/trey-material-darker.tet \
+     ~/.config/godot/text_editor_themes/
+   ```
+
+   ```powershell
+   # Windows
+   copy godot\trey-material-darker.tet ^
+     %APPDATA%\Godot\text_editor_themes\
+   ```
+
+   Create the `text_editor_themes` folder if it does not yet exist.
+
+2. Open Godot and go to **Editor → Editor Settings → Text Editor → Theme**.
+
+3. Set **Color Theme** to **Trey-Material-Darker** from the dropdown.
+
+The theme is applied immediately; no restart is required.
+
+---
+
+### Godot Editor (Full UI — Plugin)
+
+> [!NOTE]
+> Use this plugin if you also want the editor UI colors (panels, accents,
+> icons) to match the Material Darker palette.  For syntax highlighting only,
+> the theme file above is sufficient.
 
 1. Copy the addon folder into the `addons/` directory of your Godot project:
 
@@ -388,6 +428,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
+| `godot/trey-material-darker.tet` | Godot script-editor color theme |
 | `addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
 | `addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
 
