@@ -342,73 +342,38 @@ Darker palette to it.
 
 ---
 
-### Godot Script Editor (Theme File)
+### Godot Script Editor (Custom Theme File)
 
 > [!TIP]
-> This is the simplest way to apply the syntax highlighting to Godot's built-in
-> script editor — no plugin or project changes required.
+> Use this approach to apply the script editor's visual colours (background,
+> caret, selection, line numbers …) by loading a file through Godot's
+> built-in file browser — no copying to a system folder is required.
 
-> [!IMPORTANT]
-> The `.tet` file must be **copied directly to a folder on disk** — it cannot be
-> imported through any Godot file-browser dialog.  Godot's built-in file dialogs
-> filter for `.res / .tres / .theme` resources and will not show `.tet` files.
-> Follow the copy steps below and then select the theme from the dropdown.
+> [!NOTE]
+> This theme file covers the script editor's **visual/widget properties**
+> (CodeEdit colours: background, caret, selection, line numbers, etc.).
+> Syntax-token colours (keyword, string, comment …) are EditorSettings
+> properties and require the plugin below.  For syntax highlighting alone
+> without the plugin, the companion `.tet` file remains available —
+> see its header comment for copy instructions.
 
-1. Find your Godot editor data folder.
+1. Open **Editor → Editor Settings**, then navigate to **Interface → Theme**.
 
-   > [!TIP]
-   > The easiest way is to open Godot and choose **Editor → Open Editor Data/Settings Folder**
-   > (the exact label varies by platform). That opens the folder in your file manager — the
-   > `text_editor_themes` directory lives inside it.
+2. Next to **Custom Theme**, click the folder icon to open the file browser.
 
-   Common default locations:
+3. Browse to the `godot/` folder of this repository and select
+   **trey-material-darker.tres**.
 
-   ```bash
-   # macOS (Godot downloaded from godotengine.org)
-   ~/Library/Application Support/Godot/
-
-   # Linux
-   ~/.config/godot/
-
-   # Windows
-   %APPDATA%\Godot\
-   ```
-
-2. Copy the theme file into the `text_editor_themes` sub-folder (create it if it does not exist):
-
-   ```bash
-   # macOS
-   mkdir -p ~/Library/Application\ Support/Godot/text_editor_themes
-   cp godot/trey-material-darker.tet \
-     ~/Library/Application\ Support/Godot/text_editor_themes/
-   ```
-
-   ```bash
-   # Linux
-   mkdir -p ~/.config/godot/text_editor_themes
-   cp godot/trey-material-darker.tet \
-     ~/.config/godot/text_editor_themes/
-   ```
-
-   ```powershell
-   # Windows
-   mkdir -Force "$env:APPDATA\Godot\text_editor_themes"
-   copy godot\trey-material-darker.tet "$env:APPDATA\Godot\text_editor_themes\"
-   ```
-
-3. Restart Godot (or reopen the Editor Settings window if Godot is already running).
-
-4. Open **Editor → Editor Settings**, navigate to **Text Editor → Theme**, and set
-   **Color Theme** to **trey-material-darker** from the dropdown.
+4. Click **Open**.  The script editor immediately picks up the new colours.
 
 ---
 
-### Godot Editor (Full UI — Plugin)
+### Godot Editor (Full UI + Syntax Highlighting — Plugin)
 
 > [!NOTE]
-> Use this plugin if you also want the editor UI colors (panels, accents,
-> icons) to match the Material Darker palette.  For syntax highlighting only,
-> the theme file above is sufficient.
+> Use this plugin for the complete Material Darker experience — editor UI
+> colours (panels, accents, icons) **and** full syntax-token highlighting —
+> all applied and restored automatically.
 
 1. Copy the addon folder into the `addons/` directory of your Godot project:
 
@@ -455,7 +420,8 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
-| `godot/trey-material-darker.tet` | Godot script-editor color theme |
+| `godot/trey-material-darker.tres` | Godot custom editor theme (file-dialog loadable) |
+| `godot/trey-material-darker.tet` | Godot script-editor syntax-only theme (manual install) |
 | `addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
 | `addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
 
