@@ -348,6 +348,12 @@ Darker palette to it.
 > This is the simplest way to apply the syntax highlighting to Godot's built-in
 > script editor — no plugin or project changes required.
 
+> [!IMPORTANT]
+> The `.tet` file must be **copied directly to a folder on disk** — it cannot be
+> imported through any Godot file-browser dialog.  Godot's built-in file dialogs
+> filter for `.res / .tres / .theme` resources and will not show `.tet` files.
+> Follow the copy steps below and then select the theme from the dropdown.
+
 1. Find your Godot editor data folder.
 
    > [!TIP]
