@@ -26,6 +26,7 @@ came before them.
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
+| Warp | `warp/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
 | Godot Editor (full UI) | `addons/trey_material_darker_editor_theme/` |
@@ -264,6 +265,25 @@ came before them.
 
 ---
 
+### Warp
+
+1. Copy the theme file:
+
+   ```bash
+   mkdir -p ~/.warp/themes
+   cp warp/trey-material-darker.yaml ~/.warp/themes/
+   ```
+
+2. Open Warp and go to **Settings → Appearance → Themes**.
+
+3. Select **trey-material-darker** from the theme list.
+
+> [!TIP]
+> You can also open the Warp theme picker with `Ctrl+P` (Linux/Windows) or
+> `Cmd+P` (macOS) and search for **trey-material-darker**.
+
+---
+
 ### ZSH / Oh-My-Zsh
 
 #### Simple Theme (Oh-My-Zsh)
@@ -418,6 +438,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
+| `warp/trey-material-darker.yaml` | Warp terminal theme |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
 | `godot/trey-material-darker.tres` | Godot custom editor theme (file-dialog loadable) |
