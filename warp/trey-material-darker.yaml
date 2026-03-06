@@ -1,0 +1,29 @@
+# Trey's Material Darker Theme for Warp
+# Based on Material Darker color palette
+
+accent: '#82aaff'
+background: '#212121'
+foreground: '#eeffff'
+details: darker
+cursor: '#eeffff'
+selection_background: '#616161'
+selection_foreground: '#eeffff'
+terminal_colors:
+  normal:
+    black: '#212121'
+    red: '#f07178'
+    green: '#c3e88d'
+    yellow: '#ffcb6b'
+    blue: '#82aaff'
+    magenta: '#c792ea'
+    cyan: '#89ddff'
+    white: '#eeffff'
+  bright:
+    black: '#848484'
+    red: '#f07178'
+    green: '#c3e88d'
+    yellow: '#ffcb6b'
+    blue: '#82aaff'
+    magenta: '#c792ea'
+    cyan: '#89ddff'
+    white: '#ffffff'
