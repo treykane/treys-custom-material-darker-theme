@@ -29,7 +29,7 @@ came before them.
 | Warp | `warp/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
-| Godot Editor (full UI) | `addons/trey_material_darker_editor_theme/` |
+| Godot Editor (full UI) | `godot/addons/trey_material_darker_editor_theme/` |
 
 ---
 
@@ -395,10 +395,11 @@ Darker palette to it.
 > colours (panels, accents, icons) **and** full syntax-token highlighting —
 > all applied and restored automatically.
 
-1. Copy the addon folder into the `addons/` directory of your Godot project:
+1. Copy the addon folder from this repository into the `addons/` directory
+   of your Godot project:
 
    ```bash
-   cp -r addons/trey_material_darker_editor_theme \
+   cp -r godot/addons/trey_material_darker_editor_theme \
      /path/to/your/godot_project/addons/
    ```
 
@@ -419,7 +420,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 > sharper contrast.
 
 > [!NOTE]
-> See [`addons/trey_material_darker_editor_theme/README.md`](addons/trey_material_darker_editor_theme/README.md)
+> See [`godot/addons/trey_material_darker_editor_theme/README.md`](godot/addons/trey_material_darker_editor_theme/README.md)
 > for the full list of changed settings and uninstall instructions.
 
 ---
@@ -443,8 +444,8 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
 | `godot/trey-material-darker.tres` | Godot custom editor theme (file-dialog loadable) |
 | `godot/trey-material-darker.tet` | Godot script-editor syntax-only theme (manual install) |
-| `addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
-| `addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
+| `godot/addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
+| `godot/addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
 
 ---
 

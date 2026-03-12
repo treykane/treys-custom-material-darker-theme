@@ -25,8 +25,9 @@ color palette to the Godot editor UI and built-in script editor.
 
 ## Installation
 
-1. **Copy** the `addons/trey_material_darker_editor_theme/` folder into
-   the `addons/` directory at the root of your Godot project.  
+1. **Copy** the `godot/addons/trey_material_darker_editor_theme/` folder
+   from this repository into the `addons/` directory at the root of your
+   Godot project.  
    Your project layout should look like this:
 
    ```
@@ -124,4 +125,4 @@ enabled.  All values are **saved before** the plugin applies its own and
 ## License
 
 Same as the parent repository — see the root
-[LICENSE](../../LICENSE) file.
+[LICENSE](../../../LICENSE) file.
