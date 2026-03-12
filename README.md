@@ -26,6 +26,7 @@ came before them.
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
 | Ghostty | `ghostty/` |
+| CMUX (via Ghostty config) | `ghostty/` |
 | Warp | `warp/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
@@ -244,6 +245,11 @@ came before them.
 
 ### Ghostty
 
+> [!NOTE]
+> CMUX is supported using the same Ghostty theme file and config path
+> (`~/.config/ghostty/...`), so the steps below work for both Ghostty and
+> CMUX.
+
 1. Copy the theme file:
 
    ```bash
@@ -257,7 +263,7 @@ came before them.
    theme = trey-material-darker
    ```
 
-3. Restart Ghostty or reload the configuration.
+3. Restart Ghostty/CMUX or reload the configuration.
 
 > [!TIP]
 > You can also paste the theme values directly into your
