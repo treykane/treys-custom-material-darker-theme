@@ -16,7 +16,7 @@
     <option name="RIGHT_MARGIN_COLOR" value="44444460" />
     <option name="SELECTED_INDENT_GUIDE" value="EEFFFF60" />
     <option name="SELECTED_TEARLINE_COLOR" value="82AAFF" />
-    <option name="SELECTION_BACKGROUND" value="61616150" />
+    <option name="SELECTION_BACKGROUND" value="73737360" />
     <option name="SELECTION_FOREGROUND" value="EEFFFF" />
     <option name="TEARLINE_COLOR" value="44444460" />
     <option name="WHITESPACES" value="424242" />
@@ -332,13 +332,13 @@
     <!-- Identifiers Under Caret -->
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="61616150" />
+        <option name="BACKGROUND" value="73737360" />
         <option name="ERROR_STRIPE_COLOR" value="82AAFF" />
       </value>
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="61616150" />
+        <option name="BACKGROUND" value="73737360" />
         <option name="ERROR_STRIPE_COLOR" value="82AAFF" />
       </value>
     </option>
