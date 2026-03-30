@@ -29,6 +29,7 @@ came before them.
 | Ghostty | `ghostty/` |
 | CMUX (via Ghostty config) | `ghostty/` |
 | Warp | `warp/` |
+| Windows Terminal | `windows-terminal/` |
 | Slack | `slack/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
@@ -320,6 +321,31 @@ came before them.
 
 ---
 
+### Windows Terminal
+
+1. Open Windows Terminal settings JSON:
+
+	- Press `Ctrl+Shift+,` in Windows Terminal.
+	- Select **Open JSON file**.
+
+2. Copy the scheme object from `windows-terminal/trey-material-darker.json`.
+
+3. In your `settings.json`, add that object to the `schemes` array.
+
+4. In your profile, set:
+
+	```json
+	"colorScheme": "trey-material-darker"
+	```
+
+5. Save `settings.json`.
+
+> [!TIP]
+> If `schemes` does not exist yet, create it as an array at the root level
+> of `settings.json` and add the scheme object there.
+
+---
+
 ### Slack
 
 1. Copy the theme file (optional, for keeping the value in one place):
@@ -504,6 +530,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `warp/trey-material-darker.yaml` | Warp terminal theme |
+| `windows-terminal/trey-material-darker.json` | Windows Terminal scheme |
 | `slack/trey-material-darker.txt` | Slack custom theme value |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
