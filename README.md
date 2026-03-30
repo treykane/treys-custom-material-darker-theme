@@ -22,6 +22,7 @@ came before them.
 | OpenCode | `opencode/` |
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
+| TextMate | `textmate/` |
 | Notepad++ | `notepad-plus-plus/` |
 | highlight.js | `highlight-js/` |
 | JetBrains IDEs | `jetbrains-ides/` |
@@ -83,6 +84,28 @@ came before them.
 > [!TIP]
 > You can also use **Preferences → Customize Color Scheme** to preview
 > the theme before applying it.
+
+---
+
+### TextMate
+
+1. Copy the theme file to your TextMate themes directory:
+
+	```bash
+	mkdir -p ~/Library/Application\ Support/TextMate/Themes
+	cp "textmate/trey-material-darker.tmTheme" \
+	  ~/Library/Application\ Support/TextMate/Themes/
+	```
+
+2. Restart TextMate if it is already open.
+
+3. Open **TextMate → Settings → Fonts & Colors**.
+
+4. Select **Trey's Material Darker** from the theme list.
+
+> [!TIP]
+> You can also double-click the `.tmTheme` file in Finder to install and
+> switch to it automatically.
 
 ---
 
@@ -549,6 +572,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `opencode/themes/trey-material-darker-theme.json` | OpenCode theme definition |
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
+| `textmate/trey-material-darker.tmTheme` | TextMate color theme |
 | `notepad-plus-plus/trey-material-darker.xml` | Notepad++ theme |
 | `highlight-js/trey-material-darker.css` | highlight.js theme stylesheet |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
