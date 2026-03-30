@@ -22,6 +22,7 @@ came before them.
 | OpenCode | `opencode/` |
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
+| Notepad++ | `notepad-plus-plus/` |
 | JetBrains IDEs | `jetbrains-ides/` |
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
@@ -80,6 +81,34 @@ came before them.
 > [!TIP]
 > You can also use **Preferences → Customize Color Scheme** to preview
 > the theme before applying it.
+
+---
+
+### Notepad++
+
+1. Copy the theme file to your Notepad++ themes directory:
+
+	```bash
+	# Windows (normal install)
+	copy "notepad-plus-plus\trey-material-darker.xml" ^
+	  %AppData%\Notepad++\themes\
+	```
+
+	```bash
+	# Windows (portable install)
+	copy "notepad-plus-plus\trey-material-darker.xml" ^
+	  <Notepad++_Install_Dir>\themes\
+	```
+
+2. Close all Notepad++ windows, then reopen Notepad++.
+
+3. Go to **Settings → Style Configurator**.
+
+4. Select **trey-material-darker** in the theme dropdown.
+
+> [!TIP]
+> If the theme does not appear immediately, verify the file is encoded as
+> UTF-8 and that it is in your active Notepad++ `themes` directory.
 
 ---
 
@@ -469,6 +498,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `opencode/themes/trey-material-darker-theme.json` | OpenCode theme definition |
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
+| `notepad-plus-plus/trey-material-darker.xml` | Notepad++ theme |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
 | `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
