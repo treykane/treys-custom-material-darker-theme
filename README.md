@@ -23,6 +23,7 @@ came before them.
 | Zed | `zed/` |
 | Sublime Text | `sublime-text/` |
 | Notepad++ | `notepad-plus-plus/` |
+| highlight.js | `highlight-js/` |
 | JetBrains IDEs | `jetbrains-ides/` |
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
@@ -110,6 +111,30 @@ came before them.
 > [!TIP]
 > If the theme does not appear immediately, verify the file is encoded as
 > UTF-8 and that it is in your active Notepad++ `themes` directory.
+
+---
+
+### highlight.js
+
+1. Copy the theme file into your project styles directory:
+
+	```bash
+	cp highlight-js/trey-material-darker.css /path/to/your-project/styles/
+	```
+
+2. Load the stylesheet in your app/site (exact method depends on your stack).
+
+	```html
+	<link rel="stylesheet" href="/styles/trey-material-darker.css" />
+	```
+
+3. Ensure your code blocks are highlighted with highlight.js and use the
+   `hljs` class.
+
+> [!TIP]
+> If you already import a built-in highlight.js theme (for example
+> `highlight.js/styles/github.css`), remove that import so styles do not
+> conflict.
 
 ---
 
@@ -525,6 +550,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `zed/trey-material-darker-theme-zed.json` | Zed editor theme |
 | `sublime-text/trey-material-darker.sublime-color-scheme` | Sublime Text color scheme |
 | `notepad-plus-plus/trey-material-darker.xml` | Notepad++ theme |
+| `highlight-js/trey-material-darker.css` | highlight.js theme stylesheet |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
 | `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
