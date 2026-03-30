@@ -25,6 +25,7 @@ came before them.
 | TextMate | `textmate/` |
 | Notepad++ | `notepad-plus-plus/` |
 | highlight.js | `highlight-js/` |
+| Monkeytype | `monkeytype/` |
 | JetBrains IDEs | `jetbrains-ides/` |
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
@@ -158,6 +159,33 @@ came before them.
 > If you already import a built-in highlight.js theme (for example
 > `highlight.js/styles/github.css`), remove that import so styles do not
 > conflict.
+
+---
+
+### Monkeytype
+
+1. Open Monkeytype and go to **Settings → Theme**.
+
+2. Create a custom theme (or edit an existing custom theme).
+
+3. Use the values from `monkeytype/trey-material-darker.json` for:
+
+	- `bg`
+	- `main`
+	- `caret`
+	- `sub`
+	- `subAlt`
+	- `text`
+	- `error`
+	- `errorExtra`
+	- `colorfulError`
+	- `colorfulErrorExtra`
+
+4. Save the custom theme.
+
+> [!TIP]
+> The `colors` array in the JSON file is included in Monkeytype's expected
+> variable order if you prefer to map values by position.
 
 ---
 
@@ -575,6 +603,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `textmate/trey-material-darker.tmTheme` | TextMate color theme |
 | `notepad-plus-plus/trey-material-darker.xml` | Notepad++ theme |
 | `highlight-js/trey-material-darker.css` | highlight.js theme stylesheet |
+| `monkeytype/trey-material-darker.json` | Monkeytype custom theme |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
 | `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
