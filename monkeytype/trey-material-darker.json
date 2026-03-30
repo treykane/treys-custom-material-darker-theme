@@ -1,0 +1,26 @@
+{
+	"name": "trey-material-darker",
+	"bg": "#212121",
+	"main": "#82AAFF",
+	"caret": "#EEFFFF",
+	"sub": "#848484",
+	"subAlt": "#1A1A1A",
+	"text": "#EEFFFF",
+	"error": "#F07178",
+	"errorExtra": "#924D51",
+	"colorfulError": "#FFCB6B",
+	"colorfulErrorExtra": "#C792EA",
+	"colors": [
+		"#212121",
+		"#82AAFF",
+		"#EEFFFF",
+		"#848484",
+		"#1A1A1A",
+		"#EEFFFF",
+		"#F07178",
+		"#924D51",
+		"#FFCB6B",
+		"#C792EA"
+	]
+}
+
