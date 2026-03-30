@@ -1,0 +1,97 @@
+/*
+	Trey's Material Darker Theme for highlight.js
+	Based on Material Darker color palette
+*/
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #212121;
+	color: #eeffff;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+	color: #4a4a4a;
+	font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+	color: #89ddff;
+	font-style: italic;
+}
+
+.hljs-string,
+.hljs-char.escape_,
+.hljs-regexp,
+.hljs-template-variable {
+	color: #c3e88d;
+}
+
+.hljs-number,
+.hljs-literal {
+	color: #f78c6c;
+}
+
+.hljs-title,
+.hljs-title.function_,
+.hljs-function .hljs-title,
+.hljs-property,
+.hljs-attr {
+	color: #82aaff;
+}
+
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+	color: #fdc96a;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-attr {
+	color: #f07178;
+}
+
+.hljs-attribute,
+.hljs-selector-class,
+.hljs-selector-pseudo {
+	color: #c792ea;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-built_in {
+	color: #eeffff;
+}
+
+.hljs-doctag,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+	color: #99d7f6;
+}
+
+.hljs-addition {
+	color: #c3e88d;
+	background: #1a1a1a;
+}
+
+.hljs-deletion {
+	color: #f07178;
+	background: #1a1a1a;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+
