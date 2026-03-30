@@ -1,0 +1,24 @@
+{
+	"name": "trey-material-darker",
+	"background": "#212121",
+	"foreground": "#eeffff",
+	"cursorColor": "#eeffff",
+	"selectionBackground": "#616161",
+	"black": "#212121",
+	"red": "#f07178",
+	"green": "#c3e88d",
+	"yellow": "#ffcb6b",
+	"blue": "#82aaff",
+	"purple": "#c792ea",
+	"cyan": "#89ddff",
+	"white": "#eeffff",
+	"brightBlack": "#848484",
+	"brightRed": "#f07178",
+	"brightGreen": "#c3e88d",
+	"brightYellow": "#ffcb6b",
+	"brightBlue": "#82aaff",
+	"brightPurple": "#c792ea",
+	"brightCyan": "#89ddff",
+	"brightWhite": "#ffffff"
+}
+
