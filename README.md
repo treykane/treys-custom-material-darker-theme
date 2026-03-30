@@ -28,6 +28,7 @@ came before them.
 | Ghostty | `ghostty/` |
 | CMUX (via Ghostty config) | `ghostty/` |
 | Warp | `warp/` |
+| Slack | `slack/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
 | Godot Editor (full UI) | `godot/addons/trey_material_darker_editor_theme/` |
@@ -290,6 +291,33 @@ came before them.
 
 ---
 
+### Slack
+
+1. Copy the theme file (optional, for keeping the value in one place):
+
+	```bash
+	cp slack/trey-material-darker.txt ~/trey-material-darker-slack-theme.txt
+	```
+
+2. Open Slack and go to **Settings → Preferences → Appearance**.
+
+3. Under **Theme**, click **Create a custom theme**.
+
+4. Paste the value from `slack/trey-material-darker.txt` into the custom
+   theme input:
+
+	```text
+	#212121,#1a1a1a,#82aaff,#eeffff,#212121,#eeffff,#c3e88d,#f07178
+	```
+
+5. Save/apply the theme.
+
+> [!TIP]
+> If you sync Slack preferences across devices, this custom theme can follow
+> your account automatically.
+
+---
+
 ### ZSH / Oh-My-Zsh
 
 #### Simple Theme (Oh-My-Zsh)
@@ -446,6 +474,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `warp/trey-material-darker.yaml` | Warp terminal theme |
+| `slack/trey-material-darker.txt` | Slack custom theme value |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
 | `zsh/.p10k.zsh` | Powerlevel10k configuration (advanced) |
 | `godot/trey-material-darker.tres` | Godot custom editor theme (file-dialog loadable) |
