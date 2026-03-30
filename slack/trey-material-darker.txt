@@ -1,0 +1,7 @@
+# Trey's Material Darker Theme for Slack
+# Copy into Slack: Preferences -> Themes -> Custom Theme
+# Format:
+# column_bg, menu_bg_hover, active_item, active_item_text,
+# message_pane_bg, text_color, active_presence, mention_badge
+#212121,#1a1a1a,#82aaff,#eeffff,#212121,#eeffff,#c3e88d,#f07178
+
