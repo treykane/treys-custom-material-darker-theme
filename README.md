@@ -32,6 +32,7 @@ came before them.
 | Ghostty | `ghostty/` |
 | CMUX (via Ghostty config) | `ghostty/` |
 | Warp | `warp/` |
+| iTerm2 | `iterm/` |
 | Windows Terminal | `windows-terminal/` |
 | Slack | `slack/` |
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
@@ -397,6 +398,22 @@ came before them.
 
 ---
 
+### iTerm2
+
+1. Open iTerm2 and go to **Settings → Profiles → Colors**.
+
+2. Click **Color Presets...** and choose **Import...**.
+
+3. Select `iterm/trey-material-darker.itermcolors`.
+
+4. Open **Color Presets...** again and choose **trey-material-darker**.
+
+> [!TIP]
+> You can duplicate your profile first if you want to try the theme without
+> changing your existing default profile.
+
+---
+
 ### Windows Terminal
 
 1. Open Windows Terminal settings JSON:
@@ -609,6 +626,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `warp/trey-material-darker.yaml` | Warp terminal theme |
+| `iterm/trey-material-darker.itermcolors` | iTerm2 color preset |
 | `windows-terminal/trey-material-darker.json` | Windows Terminal scheme |
 | `slack/trey-material-darker.txt` | Slack custom theme value |
 | `zsh/trey-material-darker.zsh-theme` | Oh-My-Zsh theme (simple) |
