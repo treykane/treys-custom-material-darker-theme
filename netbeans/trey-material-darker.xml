@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
+<fontscolors>
+	<fontcolor name="default" foreColor="ffeeffff" bgColor="ff212121"/>
+	<fontcolor name="caret-color-insert-mode" foreColor="ffeeffff"/>
+	<fontcolor name="line-number" foreColor="ff424242"/>
+	<fontcolor name="text-limit-line-color" foreColor="ff444444"/>
+	<fontcolor name="selection" bgColor="ff616161" foreColor="ffeeffff"/>
+	<fontcolor name="highlight-search" bgColor="ff616161"/>
+	<fontcolor name="inc-search" bgColor="ff616161"/>
+	<fontcolor name="highlight-caret-row" bgColor="ff1a1a1a"/>
+	<fontcolor name="status-bar" bgColor="ff1a1a1a" foreColor="ffeeffff"/>
+	<fontcolor name="status-bar-bold" bgColor="ff1a1a1a" foreColor="ff82aaff">
+		<font style="bold"/>
+	</fontcolor>
+	<fontcolor name="code-folding" bgColor="ff1a1a1a" foreColor="ffeeffff"/>
+	<fontcolor name="code-folding-bar" foreColor="ff444444"/>
+	<fontcolor name="guarded" bgColor="ff1a1a1a"/>
+	<fontcolor name="nbeditor-bracesMatching-match" bgColor="ff1a1a1a" foreColor="ff89ddff">
+		<font style="bold"/>
+	</fontcolor>
+	<fontcolor name="nbeditor-bracesMatching-mismatch" bgColor="ff1a1a1a" foreColor="fff07178">
+		<font style="bold"/>
+	</fontcolor>
+
+	<fontcolor name="comment" foreColor="ff4a4a4a">
+		<font style="italic"/>
+	</fontcolor>
+	<fontcolor name="keyword" foreColor="ff89ddff">
+		<font style="italic"/>
+	</fontcolor>
+	<fontcolor name="operator" foreColor="ff99d7f6"/>
+	<fontcolor name="string" foreColor="ffc3e88d"/>
+	<fontcolor name="character" foreColor="ffc3e88d"/>
+	<fontcolor name="number" foreColor="fff78c6c"/>
+	<fontcolor name="boolean" foreColor="ff83d3f3"/>
+	<fontcolor name="identifier" foreColor="ffeeffff"/>
+	<fontcolor name="function" foreColor="ff82aaff"/>
+	<fontcolor name="method" foreColor="ff82aaff"/>
+	<fontcolor name="field" foreColor="ffeac476"/>
+	<fontcolor name="type" foreColor="fffdc96a"/>
+	<fontcolor name="class" foreColor="fffdc96a"/>
+	<fontcolor name="interface" foreColor="fffdc96a"/>
+	<fontcolor name="enum" foreColor="fffdc96a"/>
+	<fontcolor name="annotation" foreColor="ffc792ea"/>
+	<fontcolor name="tag" foreColor="fff07178"/>
+	<fontcolor name="attribute" foreColor="ffc792ea"/>
+	<fontcolor name="error" foreColor="fff07178"/>
+	<fontcolor name="warning" foreColor="ffffcb6b"/>
+	<fontcolor name="todo" foreColor="ff212121" bgColor="ffffcb6b">
+		<font style="bold"/>
+	</fontcolor>
+</fontscolors>
+
