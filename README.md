@@ -26,6 +26,7 @@ came before them.
 | Notepad++ | `notepad-plus-plus/` |
 | highlight.js | `highlight-js/` |
 | Monkeytype | `monkeytype/` |
+| NetBeans | `netbeans/` |
 | JetBrains IDEs | `jetbrains-ides/` |
 | Xcode | `xcode/` |
 | Alacritty | `alacritty/` |
@@ -187,6 +188,26 @@ came before them.
 > [!TIP]
 > The `colors` array in the JSON file is included in Monkeytype's expected
 > variable order if you prefer to map values by position.
+
+---
+
+### NetBeans
+
+1. Open NetBeans and go to **Tools → Options** (or
+   **NetBeans → Preferences** on macOS).
+
+2. In **Fonts & Colors**, click **Import...**.
+
+3. Select `netbeans/trey-material-darker.zip`.
+
+4. Check **All** and confirm the import.
+
+5. Restart NetBeans if prompted, then pick the imported profile in
+   **Fonts & Colors**.
+
+> [!TIP]
+> `netbeans/trey-material-darker.xml` is included as the source editor-color
+> profile file if you want to inspect or customize token mappings directly.
 
 ---
 
@@ -621,6 +642,8 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `notepad-plus-plus/trey-material-darker.xml` | Notepad++ theme |
 | `highlight-js/trey-material-darker.css` | highlight.js theme stylesheet |
 | `monkeytype/trey-material-darker.json` | Monkeytype custom theme |
+| `netbeans/trey-material-darker.zip` | NetBeans import bundle |
+| `netbeans/trey-material-darker.xml` | NetBeans editor color profile source |
 | `jetbrains-ides/Trey's Material Darker.icls` | JetBrains IDEs color scheme |
 | `xcode/Trey's Material Darker.xccolortheme` | Xcode color theme |
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
