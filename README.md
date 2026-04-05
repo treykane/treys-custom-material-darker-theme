@@ -33,6 +33,7 @@ came before them.
 | Ghostty | `ghostty/` |
 | CMUX (via Ghostty config) | `ghostty/` |
 | Warp | `warp/` |
+| Superfile | `superfile/` |
 | iTerm2 | `iterm/` |
 | Windows Terminal | `windows-terminal/` |
 | Slack | `slack/` |
@@ -419,6 +420,50 @@ came before them.
 
 ---
 
+### Superfile
+
+[Superfile](https://github.com/yorukot/superfile) is a terminal file manager. Themes
+live next to your `config.toml` under a `theme` folder; the file name (without
+`.toml`) is the value you set for `theme`.
+
+1. Copy the theme into your Superfile theme directory:
+
+   ```bash
+   # macOS
+   mkdir -p ~/Library/Application\ Support/superfile/theme
+   cp superfile/trey-material-darker.toml \
+     ~/Library/Application\ Support/superfile/theme/
+   ```
+
+   ```bash
+   # Linux
+   mkdir -p ~/.config/superfile/theme
+   cp superfile/trey-material-darker.toml ~/.config/superfile/theme/
+   ```
+
+   ```bash
+   # Windows (cmd)
+   mkdir "%LOCALAPPDATA%\superfile\theme" 2>nul
+   copy superfile\trey-material-darker.toml "%LOCALAPPDATA%\superfile\theme\"
+   ```
+
+2. Open your Superfile config (`config.toml` in the same parent directory as
+   `theme/`) and set:
+
+   ```toml
+   theme = 'trey-material-darker'
+   ```
+
+3. Restart Superfile (`spf`).
+
+> [!TIP]
+> Paths are documented at [superfile.dev — Config file path](https://superfile.dev/configure/config-file-path).
+> Preview highlighting uses Chroma’s **darcula** style (`code_syntax_highlight` in
+> the theme file); change that key to any built-in [Chroma style](https://github.com/alecthomas/chroma/tree/master/styles)
+> name if you prefer different syntax colours.
+
+---
+
 ### iTerm2
 
 1. Open iTerm2 and go to **Settings → Profiles → Colors**.
@@ -649,6 +694,7 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `alacritty/trey-material-darker.toml` | Alacritty terminal theme |
 | `ghostty/trey-material-darker` | Ghostty terminal theme |
 | `warp/trey-material-darker.yaml` | Warp terminal theme |
+| `superfile/trey-material-darker.toml` | Superfile terminal file manager theme |
 | `iterm/trey-material-darker.itermcolors` | iTerm2 color preset |
 | `windows-terminal/trey-material-darker.json` | Windows Terminal scheme |
 | `slack/trey-material-darker.txt` | Slack custom theme value |

@@ -1,0 +1,74 @@
+##############################################
+#                                            #
+#     Trey's Material Darker (Superfile)     #
+#                                            #
+##############################################
+
+# Matches the shared palette in this repository (Material Darker inspired).
+# Superfile theme docs: https://superfile.dev/configure/custom-theme/
+
+###############################################################################
+#                           Code Syntax Highlighting                          #
+###############################################################################
+
+# Chroma styles: https://github.com/alecthomas/chroma/tree/master/styles
+code_syntax_highlight = "darcula"
+
+###############################################################################
+#                                 Base Colors                                 #
+###############################################################################
+
+#-- Full Screen
+full_screen_fg = "#eeffff"
+full_screen_bg = "#212121"
+
+#-- Gradient
+# Note: This currently only supports two colors.
+gradient_color = ["#82aaff", "#c792ea"]
+
+#-- File Panel
+file_panel_fg = "#eeffff"
+file_panel_bg = "#212121"
+file_panel_border = "#848484"
+file_panel_border_active = "#82aaff"
+file_panel_top_directory_icon = "#c3e88d"
+file_panel_top_path = "#82aaff"
+file_panel_item_selected_fg = "#eeffff"
+file_panel_item_selected_bg = "#616161"
+
+#-- Footer
+footer_fg = "#eeffff"
+footer_bg = "#212121"
+footer_border = "#848484"
+footer_border_active = "#c3e88d"
+
+#-- Sidebar
+sidebar_fg = "#eeffff"
+sidebar_bg = "#1a1a1a"
+sidebar_title = "#89ddff"
+sidebar_border = "#1a1a1a"
+sidebar_border_active = "#f07178"
+sidebar_item_selected_fg = "#eeffff"
+sidebar_item_selected_bg = "#616161"
+sidebar_divider = "#848484"
+
+#-- Modals
+modal_fg = "#eeffff"
+modal_bg = "#212121"
+modal_border_active = "#848484"
+modal_cancel_fg = "#212121"
+modal_cancel_bg = "#f07178"
+modal_confirm_fg = "#212121"
+modal_confirm_bg = "#89ddff"
+
+#-- Help Menu
+help_menu_hotkey = "#89ddff"
+help_menu_title = "#f07178"
+
+#-- Special
+cursor = "#eeffff"
+correct = "#c3e88d"
+error = "#f07178"
+hint = "#89ddff"
+cancel = "#f07178"
+
