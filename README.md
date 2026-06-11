@@ -11,7 +11,10 @@ came before them.
 >
 > Update 2.9.2026:
 > I'm adding new themes as it comes up for my use case, and the conversions using Co-Pilot have been surprisingly successful.  This project will continue.
-
+>
+> Update 6.10.2026:
+> I haven't made anything new in a while with this, but I've been using all of these themes in different capacities for the last few months. Everything is going really well, and I've not had any major issues.
+>
 ---
 
 ## Supported Platforms
