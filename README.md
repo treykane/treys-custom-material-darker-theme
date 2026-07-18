@@ -43,6 +43,7 @@ came before them.
 | ZSH / Oh-My-Zsh / P10k | `zsh/` |
 | Godot Script Editor | `godot/` |
 | Godot Editor (full UI) | `godot/addons/trey_material_darker_editor_theme/` |
+| Obsidian | `obsidian/` |
 
 ---
 
@@ -676,6 +677,34 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 
 ---
 
+### Obsidian
+
+1. Copy the theme folder into your vault's themes directory:
+
+   ```bash
+   # macOS / Linux
+   mkdir -p /path/to/your-vault/.obsidian/themes/trey-material-darker
+   cp obsidian/theme.css /path/to/your-vault/.obsidian/themes/trey-material-darker/
+   cp obsidian/manifest.json /path/to/your-vault/.obsidian/themes/trey-material-darker/
+   ```
+
+   ```powershell
+   # Windows
+   mkdir "$env:USERPROFILE\path\to\your-vault\.obsidian\themes\trey-material-darker"
+   copy obsidian\theme.css "$env:USERPROFILE\path\to\your-vault\.obsidian\themes\trey-material-darker\"
+   copy obsidian\manifest.json "$env:USERPROFILE\path\to\your-vault\.obsidian\themes\trey-material-darker\"
+   ```
+
+2. Open Obsidian and go to **Settings → Appearance**.
+
+3. Under **Themes**, click **Manage** and select **Trey's Material Darker**.
+
+> [!TIP]
+> You can also open the Obsidian command palette (`Ctrl+P` / `Cmd+P`),
+> search for **Change theme**, and pick **Trey's Material Darker** from there.
+
+---
+
 ## Theme Files
 
 | File | Description |
@@ -707,6 +736,8 @@ theme, set the plugin status back to **Disabled** in the same Plugins panel.
 | `godot/trey-material-darker.tet` | Godot script-editor syntax-only theme (manual install) |
 | `godot/addons/trey_material_darker_editor_theme/plugin.cfg` | Godot editor plugin manifest |
 | `godot/addons/trey_material_darker_editor_theme/plugin.gd` | Godot editor plugin script |
+| `obsidian/theme.css` | Obsidian theme stylesheet |
+| `obsidian/manifest.json` | Obsidian theme manifest |
 
 ---
 
