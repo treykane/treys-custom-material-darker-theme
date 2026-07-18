@@ -2,9 +2,8 @@
   "id": "trey-material-darker",
   "name": "Trey's Material Darker",
   "version": "1.0.0",
-  "minAppVersion": "1.0.0",
+  "minAppVersion": "1.4.0",
   "author": "Trey Kane",
   "authorUrl": "https://github.com/treykane",
-  "description": "A dark theme based on the Material Darker color palette — deep charcoal backgrounds with a soft, high-contrast foreground and vivid syntax colors.",
-  "screenshot": "screenshot.png"
+  "description": "A dark theme based on the Material Darker color palette — deep charcoal backgrounds with a soft, high-contrast foreground and vivid syntax colors."
 }
